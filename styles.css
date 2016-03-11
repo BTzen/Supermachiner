@@ -1,0 +1,21 @@
+body {
+	background-color: Red; /*DeepSkyBlue*/
+	margin: 0;
+}
+
+nav ul {
+	/*list-style-type: none;*/ /* remove bullet points */
+	margin-top: 0;
+}
+
+#main {
+	margin: 0 15px;
+}
+
+#wrapper {
+	background: white;
+	margin: 0 auto 0 auto;
+	width: 960px;
+	/*display: inline-block;*/
+}
+
