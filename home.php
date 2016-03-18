@@ -7,16 +7,20 @@
 </head>
 <body>
 	<div id="wrapper">
-		<nav>
-			<ul>
-				<li><a href="#">Playlists</a></li>
-				<li><a href="#">Upload</a></li>
-				<li><a href="#">Settings</a></li>
-			</ul>
-		</nav>
+		<header id="banner">
+			<nav>
+				<ul>
+					<li><a href="#">Account</a></li>
+					<li><a href="#">Upload</a></li>
+					<li><a href="#">Playlists</a></li>
+				</ul>
+			</nav>
+		</header>
 		
 		<div id="main">
-			<h1>This is a test</h1>
+			<section class="contentGroup">	<!-- for the "Following" and "Recommended" type banners -->
+				<h1>Recommended</h1>
+			</section>
 			<p>lorem ipsum</p>
 			
 			<?php
@@ -39,6 +43,14 @@
 					die( $e->getMessage() );
 				}
 			?>
+			
+			<section class="contentGroup">
+				<h1>Following</h1>
+			</section>
+			
+			<section class="contentGroup">
+				<h1>Popular Playlists</h1>
+			</section>
 		</div>
 	</div>
 </body>

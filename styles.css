@@ -1,11 +1,8 @@
-body {
-	background-color: Red; /*DeepSkyBlue*/
-	margin: 0;
-}
-
-nav ul {
-	/*list-style-type: none;*/ /* remove bullet points */
-	margin-top: 0;
+#banner {
+	background-color: #A9BEDB;
+	margin: 3px 0px;
+	padding-top: 20px;
+	height: 40px;
 }
 
 #main {
@@ -18,4 +15,56 @@ nav ul {
 	width: 960px;
 	/*display: inline-block;*/
 }
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.contentGroup {
+	
+}
+
+.contentList {
+	
+}
+
+body {
+	background-color: Red;
+	margin: 0;
+}
+
+nav ul {
+	list-style-type: none; /* remove bullet points */
+	padding: 0;
+	margin: 0;
+	margin-top: 0;
+	overflow: hidden;
+}
+
+li {
+	/*border-left: 1px solid;
+	border-right: 1px solid;*/
+	background-color: #BCD0E9;
+	float: right;
+	margin-left: 3px;
+	margin-right: 1px;
+	text-align: center;
+}
+
+li a {
+	display: block;  /* makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want */
+	font-size: 2em;
+	padding: 0 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: auto;
+}
+
+a:hover {
+	background-color: rgba(0, 0, 0, 0.6); /*#333333;*/
+	color: white;
+}
+
+
 
