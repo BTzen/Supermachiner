@@ -24,7 +24,7 @@
 		</header>
 		
 		<div id="main">
-			<section class="contentGroup">	<!-- for the "Following" and "Recommended" type banners -->
+			<section class="content-group">	<!-- for the "Following" and "Recommended" type banners -->
 				<h1>Recommended</h1>
 			</section>
 			<div class="content-scroll">
