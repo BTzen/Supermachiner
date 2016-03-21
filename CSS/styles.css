@@ -103,6 +103,7 @@
 .content-list {
 	margin: 0 auto; 		/* along with width, used to center the list */
 	position: relative;		/* ancestor for button positioning */
+	/* height: 400px; */
 	width: 648px;			/* width must match width of carousel to center properly */
 }
 
@@ -123,6 +124,7 @@
 	position: relative;
 	overflow: hidden;
 	width: 648px;
+	/* height: 400px; */
 	margin: 0 auto;
 }
 /* container of carousel items */
@@ -138,13 +140,16 @@
     -webkit-margin-after: 0; */
 }
 
-.jcarousel img {
+.jcarousel div.content-box {
 	float: left;	/* required for block elements like <li> */
-	margin: 2px;
-	height: 100px;
-	width: auto; 
-	max-width: auto;
-	max-height: 112px;
+	margin-right: 4px;
+	width: 200px;
+}
+
+.jcarousel div.content-box img{
+	float: left;			/* allows automatic image size scaling to fit div */
+	max-width: 100%;		/* 1.7048*height */
+	max-height: 100%; 
 }
 
 body {

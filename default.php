@@ -7,9 +7,33 @@
 	<script src="jquery.jcarousel.min.js"></script>
 	<script src="main.js"></script>
 	<title>One Paw Media</title>
-<script type="text/javascript">
+<style>
+	.jcarousel div.content-box {
+		/* display: inline-block; */
+		float: left;	/* required for block elements like <li> */
+		margin-right: 12px;
+		/* height: auto; */
+		/* overflow: visible; */
+		width: 200px;
+	}
 
-</script>
+	.jcarousel div.content-box img{
+		float: left;			/* allows automatic image size scaling to fit div */
+		max-width: 100%;		/* 1.7048*height */
+		max-height: 100%; 
+	}
+	
+	.content-box span {
+		float: right;
+	}
+	.content-scroll {
+		text-align: left;
+	}
+	
+	#following-list {
+		position: relative;
+	}
+</style>
 </head>
 <body>
 	<div id="wrapper">
@@ -35,37 +59,41 @@
 			</section>
 			<div class="content-list">
 				<button class="jcarousel-prev" type="button"><img src="images/left-arrow.png"></button>
-				<div class="jcarousel" style="text-align: center"> <!--content-scroll-->
+				<div class="jcarousel"> <!--content-scroll-->
 					<div>
-						<img src="images/fiesta.png">
-						<img src="images/fiesta.png">
-						<img src="images/fiesta.png">
-						<img src="images/fiesta.png">
-						<img src="images/fiesta.png">
-						<img src="images/searchIcon.png">
-						<img src="images/fiesta.png">
-						<img src="images/fiesta.png">
-						<img src="images/fiesta.png">
-						<img src="images/fiesta.png">
-						<img src="images/fiesta.png">
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
 					</div>
 				</div>
-				
 				<button class="jcarousel-next" type="button"><img src="images/right-arrow.png"></button>
 			</div>
 
-			<!--<div class="media-list">
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-			</div> -->
 			<!--
 			<?php
 				require_once("config.php");
@@ -92,36 +120,80 @@
 			<section class="content-group">
 				<h1>Following</h1>
 			</section>
-			<div class="content-scroll">
-				<div class="media">
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
-					<a href="playing.html"><img src="images/fiesta.png"></a>
+			<div class="content-list">
+				<button class="jcarousel-prev" type="button"><img src="images/left-arrow.png"></button>
+				<div class="jcarousel"> <!--content-scroll-->
+					<div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+					</div>
 				</div>
+				<button class="jcarousel-next" type="button"><img src="images/right-arrow.png"></button>
 			</div>
 			<section class="content-group">
 				<h1>Popular Playlists</h1>
 			</section>
-				<div class="content-scroll">
-					<div class="media">
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
-						<a href="playing.html"><img src="images/fiesta.png"></a>
+							<div class="content-list">
+				<button class="jcarousel-prev" type="button"><img src="images/left-arrow.png"></button>
+				<div class="jcarousel"> <!--content-scroll-->
+					<div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
+						<div class="content-box">
+							<a href="playing.html"><img src="images/fiesta.png"></a>
+							<p>Fiesta! - Will Smith<span>15:08</span></p>
+						</div>
 					</div>
+				</div>
+				<button class="jcarousel-next" type="button"><img src="images/right-arrow.png"></button>
 			</div>
 		</div>
 	</div>
