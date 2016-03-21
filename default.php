@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- <link rel="stylesheet" type="text/css" href="reset.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="CSS/reset.css" /> -->
 	<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
 	<script src="https://code.jquery.com/jquery-1.12.2.js" integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY=" crossorigin="anonymous"></script>
 	<script src="jquery.jcarousel.min.js"></script>
 	<script src="main.js"></script>
 	<title>One Paw Media</title>
 <script type="text/javascript">
-
-jQuery(document).ready(function() {
-    jQuery('.jcarousel').jcarousel();
-});
 
 </script>
 </head>
@@ -37,17 +33,25 @@ jQuery(document).ready(function() {
 			<section class="content-group">	<!-- for the "Following" and "Recommended" type banners -->
 				<h1>Recommended</h1>
 			</section>
-			<div class="jcarousel"> <!--content-scroll-->
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
-				<img src="images/fiesta.png">
+			<div class="content-list">
+				<button class="jcarousel-prev" type="button"><img src="images/left-arrow.png"></button>
+				<div class="jcarousel" style="text-align: center"> <!--content-scroll-->
+					<div>
+						<img src="images/fiesta.png">
+						<img src="images/fiesta.png">
+						<img src="images/fiesta.png">
+						<img src="images/fiesta.png">
+						<img src="images/fiesta.png">
+						<img src="images/searchIcon.png">
+						<img src="images/fiesta.png">
+						<img src="images/fiesta.png">
+						<img src="images/fiesta.png">
+						<img src="images/fiesta.png">
+						<img src="images/fiesta.png">
+					</div>
+				</div>
+				
+				<button class="jcarousel-next" type="button"><img src="images/right-arrow.png"></button>
 			</div>
 
 			<!--<div class="media-list">
