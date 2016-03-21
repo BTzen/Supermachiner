@@ -1,17 +1,47 @@
-#banner {
-	background-color: #A9BEDB;
-	margin: 0px 0px;
-	padding-top: 20px;
-	height: 40px;
+#active-media {
+	height: auto;
+	width: auto;
+	max-width: 600px;
+	max-height: 600px;
 }
 
+#banner {
+	background-color: #A9BEDB;
+	margin: 0 0 15px 0;
+	padding-top: 20px;
+}
+
+#comments {
+	border: 2px dashed purple;
+	margin: 0 -15px 0 0;
+	width: 220px;
+}
+
+#comments ul {
+	-webkit-margin-before: 0em;
+	-webkit-padding-start: 0;
+}
+
+#comments ul li{
+	float: none;
+	list-style-type: none;
+	margin: 0 0 0 0;
+	text-align: left;
+}
+
+#left-column {
+	display: inline-block;
+}
+		
 #main {
 	margin: 0 15px;
 }
 
 #media-box {
+	display: inline-block;
 	border: 2px solid black;
-	margin: 50px;
+	margin: 0 0 0 0;
+	width: 70%;
 }
 
 #media-controls {
@@ -24,6 +54,34 @@
 
 #media-data h1 {
 	margin: 0;
+}
+
+#playlist {
+	text-align: center;
+}
+
+#right-column {
+	float: right;
+	margin: 0 0 0 0;
+}
+
+#right-column h2 {
+	color: rgba(72, 72, 72, 0.9);
+	margin-top: 0px;
+}
+
+#search {
+	float: left;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#up-next {
+	height: auto;
+	width: auto;
+	max-width: 211px;
+	max-height: 211px;
+	margin: 0 -10px 0 0;
 }
 
 #wrapper {
@@ -45,11 +103,31 @@
 .content-list {
 	
 }
+/* visible area of the carousel */
+.jcarousel {
+	position: relative;
+	overflow: hidden;
+	width: 500px;
+}
+/* container of carousel items */
+.jcarousel ul {
+	width: 10000px;/*20000em;*/
+	position: relative;
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jcarousel li {
+	float: left;	/* required for block elements like <li> */
+	width: 200px;
+}
 
 body {
 	background-color: Red;
 	margin: 0;
-	font-family: "Arial", sans-serif;
+	font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 a {
@@ -57,7 +135,7 @@ a {
 }
 
 a:visited {
-	
+	color: rgba(72, 72, 72, 0.9);
 }
 
 a:hover {
@@ -78,15 +156,16 @@ a:hover {
 
 h1 {
 	color: rgba(72, 72, 72, 0.9);
-	font-family: "Arial", sans-serif;
 }
 
 nav ul {
+	border: 2px dotted green;
 	list-style-type: none; /* remove bullet points */
 	padding: 0;
 	margin: 0;
 	margin-top: 0;
 	overflow: hidden;
+	/*width: auto;*/
 }
 
 li {
@@ -101,10 +180,9 @@ li {
 
 li a {
 	display: block;  /* makes the whole link area clickable (not just the text), and it allows us to specify the width (and padding, margin, height, etc. if you want */
-	font-family: "Arial", sans-serif;
 	font-size: 1.5em;
 	padding: 0 15px;
 	text-decoration: none;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	width: auto;
 }
