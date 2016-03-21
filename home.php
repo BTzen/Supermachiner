@@ -66,7 +66,7 @@
 			?>
 			-->
 			
-			<section class="contentGroup">
+			<section class="content-group">
 				<h1>Following</h1>
 			</section>
 			<div class="content-scroll">
@@ -83,7 +83,7 @@
 					<img src="images/fiesta.png">
 				</div>
 			</div>
-			<section class="contentGroup">
+			<section class="content-group">
 				<h1>Popular Playlists</h1>
 			</section>
 				<div class="content-scroll">
