@@ -101,27 +101,50 @@
 }
 
 .content-list {
-	
+	margin: 0 auto; 		/* along with width, used to center the list */
+	position: relative;		/* ancestor for button positioning */
+	width: 648px;			/* width must match width of carousel to center properly */
 }
+
+.jcarousel-prev {
+	position: absolute;
+	left: -70px;
+	top: 0;
+}
+
+.jcarousel-next {
+	position: absolute;
+	right: -70px;
+	top: 0;
+}
+
 /* visible area of the carousel */
 .jcarousel {
 	position: relative;
 	overflow: hidden;
-	width: 500px;
+	width: 648px;
+	margin: 0 auto;
 }
 /* container of carousel items */
-.jcarousel ul {
-	width: 10000px;/*20000em;*/
+.jcarousel div {
+	width: 20000em;
 	position: relative;
 
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	
+/* 	-webkit-margin-before: 0;
+    -webkit-margin-after: 0; */
 }
 
-.jcarousel li {
+.jcarousel img {
 	float: left;	/* required for block elements like <li> */
-	width: 200px;
+	margin: 2px;
+	height: 100px;
+	width: auto; 
+	max-width: auto;
+	max-height: 112px;
 }
 
 body {

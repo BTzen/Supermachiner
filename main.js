@@ -1,6 +1,14 @@
-// $(document).ready(function() {
-	// jQuery('.jcarousel').jcarousel();
-// });
+$(document).ready(function() {
+	$('.jcarousel').jcarousel();
+	
+	$('.jcarousel-next').click(function() {
+		$('.jcarousel').jcarousel('scroll', '+=5');
+	});
+	
+	$('.jcarousel-prev').click(function() {
+		$('.jcarousel').jcarousel('scroll', '-=5');
+	});
+});
 
 // $(function() {
 	// $('.jcarousel').jcarousel({
@@ -8,6 +16,6 @@
 	// });
 // });
 
-// $('.jcarousel-prev').click(function() {
-	// $('.jcarousel').jcarousel('scroll', '-=1');
+// $('.jcarousel-next').click(function() {
+	// $('.jcarousel').jcarousel('scroll', '+=1');
 // });
