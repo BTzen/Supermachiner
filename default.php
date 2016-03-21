@@ -38,6 +38,9 @@
 <body>
 	<div id="wrapper">
 		<header id="banner">
+			<div id="logo-link">
+				<a href="default.php"><img class="logo" src="images/icon.png" alt="logo"></a>
+			</div>
 			<div id="search">
 				<form>
 					<input type="search" >

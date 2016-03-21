@@ -8,11 +8,11 @@
 #banner {
 	background-color: #A9BEDB;
 	margin: 0 0 15px 0;
+	overflow: auto;				/* keeps logo in banner */
 	padding-top: 20px;
 }
 
 #comments {
-	border: 2px dashed purple;
 	margin: 0 -15px 0 0;
 	width: 220px;
 }
@@ -32,9 +32,23 @@
 #left-column {
 	display: inline-block;
 }
-		
+
+#logo-link {
+	display: inline-block;
+	float: left;
+	margin-top: -25px;
+}
+
+#logo-link img {
+	max-height: 75px;
+}
+	
 #main {
 	margin: 0 15px;
+}
+
+#main-column {
+	text-align: center;
 }
 
 #media-box {
@@ -45,7 +59,10 @@
 }
 
 #media-controls {
-	border: 2px dashed black;
+	background: #A9BEDB;
+	border: 2px solid black;
+	margin: auto;
+	width: 600px;
 }
 
 #media-data {
@@ -153,7 +170,7 @@
 }
 
 body {
-	background-color: Red;
+	background: #A9BEDB;
 	margin: 0;
 	font-family: "Trebuchet MS", Arial, sans-serif;
 }
@@ -182,12 +199,15 @@ a:hover {
 	white-space: nowrap;
 }
 
+form {
+	display: inline-block;
+}
+
 h1 {
 	color: rgba(72, 72, 72, 0.9);
 }
 
 nav ul {
-	border: 2px dotted green;
 	list-style-type: none; /* remove bullet points */
 	padding: 0;
 	margin: 0;
