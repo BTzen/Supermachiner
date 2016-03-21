@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- <link rel="stylesheet" type="text/css" href="reset.css" /> -->
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css" />
 	<title>One Paw Media</title>
 </head>
 <body>
