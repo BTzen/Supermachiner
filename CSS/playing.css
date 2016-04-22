@@ -1,0 +1,256 @@
+button#play {
+	/* background-image: url(../images/play.png); */
+}
+
+#media-box {
+	display: inline-block;
+	border: 2px solid black;
+	margin: 0 0 0 8px;
+	width: 70%;
+}
+
+#media-data {
+	padding: 7px;
+}
+
+#media-data h1 {
+	margin: 0;
+}
+
+#media-controls {
+	padding-bottom: 5px;
+	display: table;
+	background: #A9BEDB;
+	border: 2px solid black;
+	margin: auto;
+	width: 600px;
+}
+
+#media-controls img {
+	/* display: block;
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%; */
+}
+
+#media-controls :focus {
+	outline: 0;
+}
+
+#media-controls button {	/* http://phrogz.net/css/vertical-align/ */
+	display: table-cell;
+	border-radius: 20px;
+	background-color: #bdd0e9; /* #A9BEDB; */ 
+	vertical-align: middle;
+	margin: 5px 2px;
+	width: 51px;
+	height: 51px;
+}
+
+#media-controls .volume-slider {
+	margin-left: 8px;
+	width: 80px;
+}
+
+#media-controls input[type=range] {
+	/* display: table-cell; */
+	/* height: 30px; */
+	/* border: 5px solid black; */
+	vertical-align: middle;
+}
+
+#media-controls div#time {
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#media-controls span {
+	color: #434242;
+	/* padding: px; */
+}
+
+#playlist {
+	position: relative;
+}
+
+#playlist-body:hover {
+	cursor: pointer;
+}
+
+#playlist-body {
+	background-color: #A9BEDB;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	/* border: 1px solid black; */
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 10px;
+	margin: 0 15px 0 0;
+}
+
+#playlist span {
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#tab-box {
+	display: inline-block;
+	background-color: #A9BEDB;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	height: 40px;
+	width: 94%;
+}
+
+#tab-box span {
+	display: inline-block;
+	margin: 8px 4px;
+}
+
+.active-tab {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#tab1 {
+	padding-left: 13px;
+}
+
+.active-tab:hover, .tab:hover{
+	cursor: pointer;
+}
+
+.tab  {
+	color: rgba(72, 72, 72, 0.4);
+	font-size: 0.9em;
+}
+
+#right-column {
+	float: right;
+	margin: 0 0 0 0;
+	/* width: 20%; */
+}
+
+#right-column h2 {
+	color: rgba(72, 72, 72, 0.9);
+	margin-top: 0px;
+}
+
+#up-next-img {
+	display: block;
+	/* height: auto;
+	width: auto; */
+	max-width: 211px;
+	/* max-height: 211px; */
+	/* margin: 0 -10px 0 0; */
+	margin: auto;
+}
+
+/* https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+.progress-bar {
+	margin-bottom: 18px;
+	margin-top: 10px;
+	-webkit-appearance: none; 	/* hide slider so a custom slider can be shown instead */
+	width: 98%;				/* required for Firefox */
+}
+
+.progress-bar::-webkit-slider-thumb {
+	webkit-appearance: none;
+}
+
+.progress-bar::-ms-track {
+	width: 100%;
+	cursor: pointer;
+	background: transparent;	/* hides slider so custom styles can be made */
+	border-color: transparent;
+	color: transparent;
+}
+
+/* thumb styling */
+.progress-bar::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: 1px solid #000;
+	height: 30px;
+	width: 16px;
+	border-radius: 3px;
+	background: #434242;
+	cursor: pointer;
+	margin-top: -10px;
+	box-shadow: 1px 1px 1px #000, 0px 0px 1px #0d0d0d
+}
+
+/* All the same stuff for Firefox */
+.progress-bar::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.progress-bar::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* track styling */
+.progress-bar::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9; /*434242*/
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+.progress-bar:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+
+.progress-bar::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+.progress-bar::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+.progress-bar::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.progress-bar:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+.progress-bar::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+.progress-bar:focus::-ms-fill-upper {
+  background: #367ebd;
+}

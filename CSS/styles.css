@@ -44,61 +44,17 @@
 }
 	
 #main {
-	margin: 0 15px;
+	/* margin: 0 15px; */
 }
 
 #main-column {
-	text-align: center;
-}
-
-#media-box {
-	display: inline-block;
-	border: 2px solid black;
-	margin: 0 0 0 0;
-	width: 70%;
-}
-
-#media-controls {
-	background: #A9BEDB;
-	border: 2px solid black;
-	margin: auto;
-	width: 600px;
-}
-
-#media-data {
-	padding: 7px;
-}
-
-#media-data h1 {
-	margin: 0;
-}
-
-#playlist {
-	text-align: center;
-}
-
-#right-column {
-	float: right;
-	margin: 0 0 0 0;
-}
-
-#right-column h2 {
-	color: rgba(72, 72, 72, 0.9);
-	margin-top: 0px;
+	text-align: center;		/* prevents column with the player from smooshing up against the left*/
 }
 
 #search {
 	float: left;
 	display: inline-block;
 	margin-left: 10px;
-}
-
-#up-next {
-	height: auto;
-	width: auto;
-	max-width: 211px;
-	max-height: 211px;
-	margin: 0 -10px 0 0;
 }
 
 #wrapper {
@@ -113,9 +69,8 @@
     color: white;
 }
 
-.content-group {
-	
-}
+/*must be absolutely positioned and have a defined height for children to use height percentage */
+div.content-box {	}
 
 .content-list {
 	margin: 0 auto; 		/* along with width, used to center the list */
@@ -124,50 +79,28 @@
 	width: 648px;			/* width must match width of carousel to center properly */
 }
 
-.jcarousel-prev {
-	position: absolute;
-	left: -70px;
-	top: 0;
+div.content-box  > .content-data  {
+	/* background: rgba(119, 142, 173, 1.0); */
+	margin-left: 10px;
+	margin-right: 2px;
+	margin-top: 6px;
+	width: inherit;
 }
 
-.jcarousel-next {
-	position: absolute;
-	right: -70px;
-	top: 0;
+.content-data { 
+	/* width: 100%; */
+	height: 70px;
 }
 
-/* visible area of the carousel */
-.jcarousel {
-	position: relative;
-	overflow: hidden;
-	width: 648px;
-	/* height: 400px; */
-	margin: 0 auto;
-}
-/* container of carousel items */
-.jcarousel div {
-	width: 20000em;
-	position: relative;
-
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	
-/* 	-webkit-margin-before: 0;
-    -webkit-margin-after: 0; */
+.content-data :first-child {
+	color: #e6e6e6;
 }
 
-.jcarousel div.content-box {
-	float: left;	/* required for block elements like <li> */
-	margin-right: 4px;
-	width: 200px;
+.content-data > p {
+	color: #b3b3b3;
+	margin-top: 5px;
 }
 
-.jcarousel div.content-box img{
-	float: left;			/* allows automatic image size scaling to fit div */
-	max-width: 100%;		/* 1.7048*height */
-	max-height: 100%; 
-}
 
 body {
 	background: #A9BEDB;
@@ -186,6 +119,10 @@ a:visited {
 a:hover {
 	background-color: rgba(0, 0, 0, 0.6); /*#333333;*/
 	color: white;
+}
+
+.content-group {
+	margin-left: 20px;
 }
 
 .content-scroll {
@@ -233,4 +170,48 @@ li a {
 	text-decoration: none;
 	/*text-transform: uppercase;*/
 	width: auto;
+}
+
+/* carousel css */
+.jcarousel-prev {
+	position: absolute;
+	left: -70px;
+	top: 0;
+}
+
+.jcarousel-next {
+	position: absolute;
+	right: -70px;
+	top: 0;
+}
+
+/* visible area of the carousel */
+.jcarousel {
+	position: relative;
+	overflow: hidden;
+	width: 648px;
+	/* height: 400px; */
+	margin: 0 auto;
+}
+/* container of carousel items */
+.jcarousel div {
+	width: 20000em;
+	position: relative;
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jcarousel div.content-box {
+	background: rgba(52, 69, 94, 0.8);
+	float: left;	/* required for block elements like <li> */
+	margin-right: 12px;
+	width: 166px;
+}
+
+.jcarousel div.content-box img{
+	float: left;			/* allows automatic image size scaling to fit div */
+	max-width: 100%;		/* 1.7048*height */
+	max-height: 100%; 
 }

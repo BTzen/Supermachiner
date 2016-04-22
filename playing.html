@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" type="text/css" href="CSS/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="CSS/playing.css"/>
+	<script src="https://code.jquery.com/jquery-1.12.2.js" integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="main.js"></script>
 	<title>OPM:Now Playing</title>
-	<style>		
-		#media-controls {
-		}
-	
-		#media-controls img {
-			display: block;
-			margin: auto;
-			max-width: 100%
-			max-height: 100%;
-		}
-	</style>
 </head>
 <body>
 	<div id="wrapper">
 		<header id="banner">
 			<div id="logo-link">
-				<a href="default.php"><img class="logo" src="images/icon.png" alt="logo"></a>
+				<a href="default.html"><img class="logo" src="images/icon.png" alt="logo"></a>
 			</div>
 			<div id="search">
 				<form>
 					<input type="search" >
-					<button type="button">Search</button>
+					<button id="search-btn" type="button">Search</button>
 				</form>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#">Account</a></li>
-					<li><a href="#">Upload</a></li>
-					<li><a href="#">Playlists</a></li>
+					<li id="account"><a href="#">Account</a></li>
+					<!-- <li><a href="#">Upload</a></li> -->
+					<li id="nav-playlists"><a href="#">Playlists</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -38,18 +30,23 @@
 		<div id="main"> <!--  style="text-align: center;" -->
 			
 			<div id="right-column">	<!-- must come before non-floated content -->
-				<section id="comments">
+				<!-- <section id="comments">
 					<h2>Comments</h2>
 					<ul>
 						<li>Thrillhouse - May 12, 2015: <br /> Sweet soundtrack!</li><hr>
 						<li>Bobby Hill - March 25, 2015: <br /> Mmm, fresh out of the dryer</li><hr>
 						<li>Hank Hill - March 26, 2015: <br /> Bobby, I told you to get off that gat dang internet!</li><hr>
 					</ul>
-				</section>
+				</section> -->
 				<section id="playlist">
-					<h3>Up next</h3>
-					<img id="up-next" src="images/NuclearThroneOST.jpg" alt="Flashyn">
-					<br />Fläshyn - Nuclear Throne OST
+					<div id="tab-box">
+						<span id="tab1" class="active-tab">Up next</span>
+						<span id="tab2" class="tab">Previous songs</span>
+					</div>
+					<div id="playlist-body">
+						<img id="up-next-img" src="images/NuclearThroneOST.jpg" alt="Flashyn">
+						<span>Fläshyn - Nuclear Throne OST<span>
+					</div>
 				</section>
 			</div>
 			
@@ -57,7 +54,17 @@
 				<section id="media-box">
 					<img id="active-media" src="images/NuclearThroneOST.jpg" alt="media" > <!-- width="640" height="385" -->
 					<div id="media-controls">
-						<img src="images/mediaplayercontrols.png">
+						<input class="progress-bar" type="range">
+						<button id="play" type="button"><img src="images/play.png"></button>
+						<button class="volume-btn" type="button"><img src="images/volume.png"></button>
+						<input class="volume-slider" type="range" value="100">
+						<div id="time">
+							<span id="current-time">0:15</span>
+							<span id="time-separator">/</span>
+							<span id="current-duration">2:08</span>
+						</div>
+						<button class="repeat" type="button"><img src="images/repeat.png"></button>
+						<!-- <img src="images/mediaplayercontrols.png"> -->
 					</div>
 					<div id="media-data">
 						<h1>Legend of the Throne</h1>
